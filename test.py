@@ -131,7 +131,9 @@ class order():
                         order.printorder(self,Name,qty,prd_Name,prodinstance.Price,total_price, prodinstance.Stock)
                         break
 
+
     def usercreate(self,Name):
+        print()
         type = str(input("Enter the Type (R/W) :"))
         ID = str(uuid1())
         val = {"Cust_id" : ID , "Cust_name" : Name , "type" : type,
